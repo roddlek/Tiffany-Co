@@ -1,28 +1,27 @@
+//컴포넌트 연결
 import './App.css';
 import Header from './component/Header';
-import Nav from './component/Nav';
-import Article from './component/Article'
-import Footer from './component/Footer'
-import { BsArrowUp } from "react-icons/bs";
+import Main from './component/Main';
+import Aside from './component/Aside';
+import Footer from './component/Footer';
+// 라우터 연결
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Nav />
-      <div id="content">
-        <main>
-          <Article />
-        </main>
-      </div>
-      <aside>
-          <h4 className="hide">top메뉴</h4>
-          <p><a href="#"><BsArrowUp /></a></p>
-      </aside>
-      <div id="footerWrap">
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <App>
+        <Routes>
+          <Route />
+        </Routes>
+      </App>
+    </BrowserRouter>
+    // <div className="App">
+    //   <Header />
+    //   <Main />
+    //   <Aside />
+    //   <Footer />
+    // </div>
   );
 }
 
