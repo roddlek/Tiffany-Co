@@ -1,3 +1,4 @@
+import React from 'react';
 // 아이콘 연결
 import { BsArrowUp } from "react-icons/bs";
 

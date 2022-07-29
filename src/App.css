@@ -17,10 +17,10 @@
     background-color: #81d8d0;
 }
 #headerWrap>header{
-    width: 1370px;
+    width: 90%;
+    /* width: 1370px; */
     margin: 0 auto;
     position: relative;
-    /* background-color: lightpink; */
 }
 #headerWrap>header>h1{
     text-align: center;
@@ -34,23 +34,21 @@
 #headerWrap>header>ul>li{
     padding: 0 15px;
     border-left: 1px solid #fff;
+    font: 16px Arial, Helvetica, sans-serif;
 }
 #headerWrap>header>ul>li:first-child{
     border-left: none;
-    font: 16px Arial, Helvetica, sans-serif;
-    color: #000;
+}
+#headerWrap>header>ul>li>a{
+    color: #fff;
+    text-decoration: none;
 }
 
 /* navigation */
 #navWrap{
     width: 100%;
-    height: 49px;
-    /* height: 300px; */
-    position: absolute;
-    left: 0; top: 100px;
-}
-#navWrap:hover{
-    height: 300px;
+    height: 50px;
+    left: 0; top: 104px;
 }
 #navWrap:hover nav>ul>li>ul{
     display: block;
@@ -61,25 +59,21 @@
     background-color: #ffd0e0;
 }
 #navWrap>div>nav{
-    width: 1370px;
+    width: 90%;
+    /* width: 1370px; */
     margin: 0 auto;
-    /* background-color: darkcyan; */
 }
 #navWrap>div>nav>ul{
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    /* justify-content: space-evenly; -> flex-grow: 1 과 justifiy-content: center가 균등하게 가운데 정렬을 할 수 있다.*/
+    justify-content: start;
 }
 #navWrap>div>nav>ul>li{
-    flex-grow: 1;
+    width: 25%;
     text-align: center;
-    position: relative;
-    margin: 0 15px;
-    /* 크기를 좌우하는 <li>에 margin 값을 주어 border-bottom 사이 떨어트리기 */
 }
 #navWrap>div>nav>ul>li>a{
-    padding: 0 77px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -90,7 +84,6 @@
 
 /* main */
 #content>main>article{
-    padding-top: 49px;
     background-color: #fff;
 }
 /* flex */
@@ -99,10 +92,11 @@
     background: linear-gradient(#fff, #81d8d0);
 }
 #content>main>article>h3.box01>div{
-    width: 1370px;
+    width: 90%;
+    /* width: 1370px; */
     height: 100%;
     margin: 0 auto;
-    background: url("../public/images/gifts_gifts1_bg2.png") no-repeat left bottom,
+    background: url("../public/images/gifts_gifts1_bg2.png") no-repeat left bottom 30px,
     url("../public/images/gifts_gifts1_bg1.png") no-repeat right top;
     display: flex;
     align-items: center;
@@ -145,7 +139,8 @@ h3.box02{
     background: linear-gradient(to right, #f4e5ee, #c6bdda);
 }
 h3.box02>div{
-    width: 1370px;
+    width: 90%;
+    /* width: 1370px; */
     height: 100%;
     margin: 0 auto;
     background: url("../public/images/gifts_gifts2_bg1.png") no-repeat left top,
@@ -159,7 +154,6 @@ h3.box02>div>span{
     width: 100%;
     font: 70px/70px 'Times New Roman', Times, serif;
     color: #fff;
-    /* background-color: gray; */
     margin-top: -35px;
     text-align: center;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);

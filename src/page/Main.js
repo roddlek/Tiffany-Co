@@ -36,7 +36,7 @@ function Main(){
                 <article>
                     <h3 className="box01">
                         <div>
-                            <span>Whatever Shining style</span>
+                            <span>Whatever Shining Style</span>
                         </div>
                     </h3>
                     <section className='box01'>
@@ -50,7 +50,7 @@ function Main(){
 
                     <h3 className="box02">
                         <div>
-                            <span>Capture her world</span>
+                            <span>Capture Her World</span>
                         </div>
                     </h3>
                     <section className='box02'>
