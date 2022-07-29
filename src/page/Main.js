@@ -1,16 +1,16 @@
 function Main(){
     const ring = [
         {
-            "title": "Diamond Vine Ring",
+            "title": "T-Wire Ring",
             "img": "images/box01-01.png"
         },{
-            "title": "Apollo Brooch",
+            "title": "Pearl Ring",
             "img": "images/box01-02.png"
         },{
-            "title": "Bypass Ring",
+            "title": "Diamond Vine Ring",
             "img": "images/box01-03.png"
         },{
-            "title": "Flames Brooch",
+            "title": "1837 Ring",
             "img": "images/box01-04.png"
         }
     ]

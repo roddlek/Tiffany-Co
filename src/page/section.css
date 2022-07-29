@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+section.page{
+    width: 1200px;
+    padding: 42px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+section.page>figure{
+    width: 24%;
+    padding: 31px 0 9px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
+}
+section.page>figure>img{
+    margin-bottom: 9px;
+}
+section.page>figure>figcaption{
+    font: 18px arial, sans-serif;
+    color: #999;
+}
+section.page>figure>figcaption>dl{
+    text-align: left;
+}
+section.page>figure>figcaption>dl>dt, section.page>figure>figcaption>dl>dd{
+    margin-bottom: 16px;
+}

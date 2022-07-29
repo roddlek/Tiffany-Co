@@ -117,21 +117,21 @@ section.box01{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    /* background-color: lawngreen; */
 }
 section.box01>figure{
     width: 222px;
     padding: 31px 0 9px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
 }
 section.box01>figure>img{
     margin-bottom: 9px;
 }
 section.box01>figure>figcaption{
     font: 18px arial, sans-serif;
-    color: #727272;
+    color: #999;
 }
 
 h3.box02{
@@ -232,7 +232,7 @@ aside>p>a>svg{
 #footerWrap>footer>dl{
     display: inline;
 }
-#footerWrap>footer>dl>dt, dd{
+#footerWrap>footer>dl>dt, #footerWrap>footer>dl>dd{
     display: inline;
 }
 #footerWrap>footer>address, small{

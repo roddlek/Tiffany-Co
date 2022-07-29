@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "title": "T1 Hinged Bangle",
+        "content": "Rose Gold with Diamonds, Narrow",
+        "price": "1,150,000",
+        "img": "images/section01_01.png"
+    },
+    {
+        "id": 1,
+        "title": "T1 Ring",
+        "content": "Rose Gold with Diamonds, 2.5 mm",
+        "price": "1,990,000",
+        "img": "images/section01_02.png"
+    },
+    {
+        "id": 2,
+        "title": "T1 Wide Hinged Bangle",
+        "content": "18k Gold",
+        "price": "6,500,000",
+        "img": "images/section01_03.png"
+    },
+    {
+        "id": 3,
+        "title": "T1 Ring",
+        "content": "Yellow Gold, 2.5 mm Wide",
+        "price": "1,100,000",
+        "img": "images/section01_04.png"
+    },
+    {
+        "id": 4,
+        "title": "Wire Bracelet",
+        "content": "18k Gold",
+        "price": "2,300,000",
+        "img": "images/section01_05.png"
+    }
+]
