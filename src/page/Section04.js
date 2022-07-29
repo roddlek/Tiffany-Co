@@ -1,9 +1,29 @@
+import Data from './data.json';
+import './section.css'
+import { Link } from "react-router-dom";
+
 function Section04(){
     return(
         <>
-        <article id="box4">
-            <h1>Sample04 페이지 입니다.</h1>
-            <p>Welcome Sample04</p>
+        <article className='pageBox'>
+            <h3>FINE WATCHES</h3>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><span>&gt;</span>Fine Watches</li>
+            </ul>
+            <section className='page'>
+                {Data.sec04.map( (item) => 
+                    <figure key={item.id}>
+                        <img src={process.env.PUBLIC_URL + item.img} alt={item.title} />
+                        <figcaption>
+                            <dl>
+                                <dt>{item.title}</dt>
+                                <dd>{item.price}</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                )}
+            </section>
         </article>
         </>
     )

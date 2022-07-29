@@ -50,9 +50,6 @@
     height: 50px;
     left: 0; top: 104px;
 }
-#navWrap:hover nav>ul>li>ul{
-    display: block;
-}
 #navWrap>div{
     width: 100%;
     padding: 15px 0;

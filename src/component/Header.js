@@ -23,7 +23,7 @@ function Header() {
                   <li><Link to="/section01">COLLECTIONS</Link></li>
                   <li><Link to="/section02">Gifts</Link></li>
                   <li><Link to="/section03">Brilliant Light</Link></li>
-                  <li><Link to="/section04">The WORLD OF PRISM</Link></li>
+                  <li><Link to="/section04">Fine Watches</Link></li>
               </ul>
           </nav>
       </div>

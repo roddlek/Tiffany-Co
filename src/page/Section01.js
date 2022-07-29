@@ -1,17 +1,18 @@
 import Data from './data.json';
 import './section.css'
+import { Link } from "react-router-dom";
 
 function Section01(){
     return(
         <>
-        <article id="page">
-            <h3 className='hide'>Collectrions Page</h3>
+        <article className='pageBox'>
+            <h3>COLLECTIONS</h3>
             <ul>
-                <li>HOME</li>
-                <li><span>/</span>Collectrions</li>
+                <li><Link to="/">Home</Link></li>
+                <li><span>&gt;</span><Link to="/Section01">Collections</Link></li>
             </ul>
             <section className='page'>
-                {Data.map( (item) => 
+                {Data.sec01.map( (item) => 
                     <figure key={item.id}>
                         <img src={process.env.PUBLIC_URL + item.img} alt={item.title} />
                         <figcaption>

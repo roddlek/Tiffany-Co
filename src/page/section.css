@@ -1,7 +1,34 @@
 @charset "utf-8";
-
+a{
+    text-decoration: none;
+}
+article{
+    width: 100%;
+}
+article.pageBox>h3{
+    width: 90%;
+    padding: 30px 0 10px;
+    margin: 0 auto;
+    font: 24px 'Times New Roman', Times, serif;
+    color: #81d8d0;
+}
+article>ul{
+    width: 90%;
+    margin: 0 auto;
+}
+article>ul>li{
+    display: inline;
+    color: #999;
+}
+article>ul>li>a{
+    color: #999;
+}
+article>ul>li span{
+    padding: 0 10px;
+    color: #999;
+}
 section.page{
-    width: 1200px;
+    width: 90%;
     padding: 42px 0;
     margin: 0 auto;
     display: flex;
@@ -11,7 +38,7 @@ section.page{
 section.page>figure{
     width: 24%;
     padding: 31px 0 9px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 10px;
@@ -27,6 +54,7 @@ section.page>figure>figcaption{
 }
 section.page>figure>figcaption>dl{
     text-align: left;
+    padding: 0 30px;
 }
 section.page>figure>figcaption>dl>dt, section.page>figure>figcaption>dl>dd{
     margin-bottom: 16px;
