@@ -9,7 +9,7 @@ article.pageBox>h3{
     width: 90%;
     padding: 30px 0 10px;
     margin: 0 auto;
-    font: 24px 'Times New Roman', Times, serif;
+    font-size: 24px;
     color: #81d8d0;
 }
 article>ul{
@@ -19,6 +19,7 @@ article>ul{
 article>ul>li{
     display: inline;
     color: #999;
+    font-family: Arial, Helvetica, sans-serif;
 }
 article>ul>li>a{
     color: #999;
@@ -49,12 +50,16 @@ section.page>figure>img{
     margin-bottom: 9px;
 }
 section.page>figure>figcaption{
-    font: 18px arial, sans-serif;
-    color: #999;
+    font: 18px;
+    color: #666;
 }
 section.page>figure>figcaption>dl{
     text-align: left;
     padding: 0 30px;
+}
+section.page>figure>figcaption>dl>dt{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 section.page>figure>figcaption>dl>dt, section.page>figure>figcaption>dl>dd{
     margin-bottom: 16px;

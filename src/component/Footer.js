@@ -3,20 +3,25 @@ import React from 'react';
 function Footer(){
     const sns = [
         {
+            "id": 0,
             "title": "twitter",
-            "img": "images/icon-01.png"
+            "img": "images/icon-01.png",
+            "url": "https://twitter.com/TiffanyAndCo"
         },{
+            "id": 1,
             "title": "facebook",
-            "img": "images/icon-02.png"
+            "img": "images/icon-02.png",
+            "url": "https://www.facebook.com/Tiffany"
         },{
+            "id": 2,
             "title": "google",
-            "img": "images/icon-03.png"
+            "img": "images/icon-03.png",
+            "url": "https://twitter.com/TiffanyAndCo"
         },{
+            "id": 3,
             "title": "instagram",
-            "img": "images/icon-04.png"
-        },{
-            "title": "tplus",
-            "img": "images/icon-05.png"
+            "img": "images/icon-04.png",
+            "url": "https://www.instagram.com/tiffanyandco/"
         }
     ]
     return (
@@ -24,7 +29,7 @@ function Footer(){
             <footer>
                 <ul>
                     {sns.map( (item) => 
-                        <li key={item.id}><a href="#">
+                        <li key={item.id}><a href={item.sns}>
                             <img src={process.env.PUBLIC_URL + item.img} alt={item.title} />
                         </a></li>
                     )}
@@ -36,7 +41,7 @@ function Footer(){
                     <dt>FAX &colon; </dt>
                     <dd>02.543.1257</dd>
                 </dl>
-                <small>COPYRIGHT 2016 VANZOE. ALL RIGHTS RESERVED.</small>
+                <small>© T&amp;CO. 2022</small>
             </footer>
         </div>
     )

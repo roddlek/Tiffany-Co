@@ -119,53 +119,53 @@
         {
             "id": 0,
             "title": "Paris Flames Brooch",
-            "price": "280,000",
+            "price": "2,800,000",
             "img": "images/section03_01.png"
         },
         {
             "id": 1,
             "title": "Apollo Brooch",
-            "price": "550,000",
+            "price": "5,500,000",
             "img": "images/section03_02.png"
         },
         {
             "id": 2,
             "title": "Peapod Brooch",
-            "price": "250,000",
+            "price": "2,500,000",
             "img": "images/section03_03.png"
         },
         {
             "id": 3,
             "title": "Maltese Cross Clip",
-            "price": "230,000",
+            "price": "2,300,000",
             "img": "images/section03_04.png"
         },
         {
             "id": 4,
             "title": "Petals Key Brooch",
             "content": "Platinum with Round Brilliant Diamonds",
-            "price": "96,000",
+            "price": "1,960,000",
             "img": "images/section03_05.png"
         },
         {
             "id": 5,
             "title": "Petals Key Brooch",
             "content": "Platinum with Round Brilliant Diamonds",
-            "price": "96,000",
+            "price": "1,960,000",
             "img": "images/section03_06.png"
         },
         {
             "id": 6,
             "title": "Fleur de Lis Key Brooch",
             "content": "Platinum with Round Brilliant Diamonds",
-            "price": "85,000",
+            "price": "1,850,000",
             "img": "images/section03_06.png"
         },
         {
             "id": 7,
             "title": "Fleur de Lis Key Brooch",
             "content": "Platinum with Round Brilliant Diamonds",
-            "price": "85,000",
+            "price": "1,850,000",
             "img": "images/section03_08.png"
         }
     ],
