@@ -6,12 +6,13 @@ function Section02(){
     return(
         <>
         <article className='pageBox'>
-            <h3>GIFTS</h3>
+            <h3 className='sec02'>GIFTS</h3>
+            <p>GIFTS</p>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><span>&gt;</span>Gifts</li>
             </ul>
-            <section className='page'>
+            <section className='page mgb'>
                 {Data.sec02.map( (item) => 
                     <figure key={item.id}>
                         <img src={process.env.PUBLIC_URL + item.img} alt={item.title} />

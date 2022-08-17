@@ -5,56 +5,64 @@
             "title": "T1 Hinged Bangle",
             "content": "Rose Gold with Diamonds, Narrow",
             "price": "1,150,000",
-            "img": "images/section01_01.png"
+            "img": "images/section01_01.png",
+            "value": "Bangle"
         },
         {
             "id": 1,
             "title": "T1 Ring",
             "content": "Rose Gold with Diamonds, 2.5mm",
             "price": "1,990,000",
-            "img": "images/section01_02.png"
+            "img": "images/section01_02.png",
+            "value": "Ring"
         },
         {
             "id": 2,
             "title": "Wire Ring",
             "content": "Rose Gold with Diamonds and Mother-of-pearl",
             "price": "2,200,000",
-            "img": "images/section01_03.png"
+            "img": "images/section01_03.png",
+            "value": "Ring"
         },
         {
             "id": 3,
             "title": "Wire Bracelet",
             "content": "Rose Gold with Mother-of-pearl",
             "price": "2,400,000",
-            "img": "images/section01_04.png"
+            "img": "images/section01_04.png",
+            "value": "Bangle"
         },
         {
             "id": 4,
             "title": "Wire Bracelet",
             "content": "18k Gold",
             "price": "2,300,000",
-            "img": "images/section01_05.png"
+            "img": "images/section01_05.png",
+            "value": "Bangle"
         },
         {
             "id": 5,
             "title": "T1 Hoop Earrings",
             "content": "Rose Gold with Diamonds",
             "price": "3,700,000",
-            "img": "images/section01_06.png"
+            "img": "images/section01_06.png",
+            "value": "Earrings"
         },
         {
             "id": 6,
             "title": "T1 Ring",
             "content": "Rose Gold, 2.5mm",
             "price": "1,990,000",
-            "img": "images/section01_07.png"
+            "img": "images/section01_07.png",
+            "value": "Ring"
         },
         {
             "id": 7,
             "title": "T1 Wide Hinged Bangle",
             "content": "18k Gold",
             "price": "6,500,000",
-            "img": "images/section01_08.png"
+            "img": "images/section01_08.png",
+            "value": "Bangle"
         }
     ],
     "sec02": [
@@ -143,28 +151,24 @@
         {
             "id": 4,
             "title": "Petals Key Brooch",
-            "content": "Platinum with Round Brilliant Diamonds",
             "price": "1,960,000",
             "img": "images/section03_05.png"
         },
         {
             "id": 5,
             "title": "Petals Key Brooch",
-            "content": "Platinum with Round Brilliant Diamonds",
             "price": "1,960,000",
             "img": "images/section03_06.png"
         },
         {
             "id": 6,
             "title": "Fleur de Lis Key Brooch",
-            "content": "Platinum with Round Brilliant Diamonds",
             "price": "1,850,000",
             "img": "images/section03_06.png"
         },
         {
             "id": 7,
             "title": "Fleur de Lis Key Brooch",
-            "content": "Platinum with Round Brilliant Diamonds",
             "price": "1,850,000",
             "img": "images/section03_08.png"
         }

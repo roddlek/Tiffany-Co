@@ -139,6 +139,7 @@ body{
     cursor: pointer;
 }
 #content>main>article>h3.box01>div>button>a{
+    display: block;
     color: #fff;
 }
 #content>main>article>h3.box01>div>button:hover{
@@ -252,6 +253,7 @@ section.box02>div>figure{
     cursor: pointer;
 }
 #content>main>article>h3.box02>div>button a{
+    display: block;
     color: #fff;
 }
 #content>main>article>h3.box02>div>button:hover{

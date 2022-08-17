@@ -6,7 +6,8 @@ function Section04(){
     return(
         <>
         <article className='pageBox'>
-            <h3>FINE WATCHES</h3>
+            <h3 className='sec04'>FINE WATCHES</h3>
+            <p>FINE WATCHES</p>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><span>&gt;</span>Fine Watches</li>

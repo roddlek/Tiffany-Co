@@ -6,15 +6,35 @@ article{
     width: 100%;
 }
 article.pageBox>h3{
+    width: 440px;
+    height: 440px;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    text-indent: -99999px;
+}
+h3.sec01{
+    background: url("/public/images/sec01.png") no-repeat center;
+}
+h3.sec02{
+    background: url("/public/images/sec02.png") no-repeat center;
+}
+h3.sec03{
+    background: url("/public/images/sec03.jpeg") no-repeat center;
+}
+h3.sec04{
+    background: url("/public/images/sec04.png") no-repeat center top;
+}
+
+article.pageBox>p{
     width: 90%;
     padding: 30px 0 10px;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 21px;
     color: #81d8d0;
 }
 article>ul{
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 18px;
 }
 article>ul>li{
     display: inline;
@@ -59,8 +79,26 @@ section.page>figure>figcaption>dl{
 }
 section.page>figure>figcaption>dl>dt{
     font-size: 18px;
+}
+section.mgb>figure>figcaption>dl>dd:nth-child(2){
+    margin-bottom: 45px;
+}
+section.page>figure>figcaption>dl>dd:last-child{
     font-family: Arial, Helvetica, sans-serif;
 }
 section.page>figure>figcaption>dl>dt, section.page>figure>figcaption>dl>dd{
     margin-bottom: 16px;
+}
+
+.pageBox>div{
+    width: 90%;
+    margin: 0 auto;
+}
+.pageBox>div>select{
+    width: 200px;
+    height: 24px;
+    float: right;
+    border-radius: 0;
+    border: 1px solid #999;
+    color: #999;
 }

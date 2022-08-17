@@ -6,7 +6,8 @@ function Section03(){
     return(
         <>
         <article className='pageBox'>
-            <h3>BRILLIANT LIGHT</h3>
+            <h3 className='sec03'>BRILLIANT LIGHT</h3>
+            <p>BRILLIANT LIGHT</p>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><span>&gt;</span>Brilliant Light</li>
@@ -18,7 +19,6 @@ function Section03(){
                         <figcaption>
                             <dl>
                                 <dt>{item.title}</dt>
-                                <dd>{item.content}</dd>
                                 <dd>{item.price}</dd>
                             </dl>
                         </figcaption>
