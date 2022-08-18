@@ -2,6 +2,7 @@ import Data from './data.json';
 import './section.css'
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import List from './components/cardList'
 
 function Section01(){
 
@@ -30,32 +31,23 @@ function Section01(){
                 <li><span>&gt;</span><Link to="/Section01">Collections</Link></li>
             </ul>
             <div>
-                <select>
+                <ul>
                     {selectList.map((btn, idx) => {
                         return(
-                            <option
+                            <li
                                 key={idx}
                                 onClick={() => activeSelecList(btn)}
                             >
                             {btn}
-                            </option>
+                            </li>
                         )
                     })}
-                </select>
+                </ul>
             </div>
             <section className='page mgb'>
-                {data.map( (a, b) => {
+                {data.map( (a, idx) => {
                     return(
-                        <figure key={b}>
-                        <img src={process.env.PUBLIC_URL + a.img} alt={a.title} />
-                        <figcaption>
-                            <dl>
-                                <dt>{a.title}</dt>
-                                <dd>{a.content}</dd>
-                                <dd>{a.price}</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
+                        <List card={a} key={idx} />
                     )
                 }
                 )}
