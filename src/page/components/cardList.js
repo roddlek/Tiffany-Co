@@ -2,6 +2,7 @@
 
 function List({card}){
     const {title, content, price, img, value} = card;
+    //console.log(card);
     return(
         <figure name={value}>
             <img src={process.env.PUBLIC_URL + img} alt={title} />

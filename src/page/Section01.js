@@ -5,19 +5,19 @@ import { useState } from 'react';
 import List from './components/cardList'
 
 function Section01(){
-
+    //데이터 설정
+    const items = Data.sec01;
     const selectList = ["Select", "Ring", "Earrings", "Bangle"]
     //useState
     //const [activeSelc, setActiveSelc] = useState(selectList);
-    const [data, setData] = useState(Data.sec01);
+    const [data, setData] = useState(items);
     //fillter
     const activeSelecList = (list) => {
-        console.log(list)
         if(list === "Select"){
-            setData(Data.sec01);
+            setData(items);
             return;
         }
-        const filterList = Data.filter((item) => item.sec01.value === list);
+        const filterList = items.filter((item) => list === items.value);
         setData(filterList);
     }
 
