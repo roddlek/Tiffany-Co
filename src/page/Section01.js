@@ -1,27 +1,49 @@
-import Data from './data.json';
+//import Data from './data.json';
 import './section.css'
 import { Link } from "react-router-dom";
-import { useState } from 'react';
-//import List from './components/cardList'
+import { useState, useEffect, useCallback } from 'react';
 
 function Section01(){
-    const [data, setData] = useState(Data.sec01);
-    const [filterData, setFilterData] = useState(Data.sec01)
+    //state 설정
+    let [list, setList] = useState([]);
+    //조건 설정
+    const [isFiltered, setisFiltered] = useState(false);
+    //filter된 item 들어오는 state 설정
+    const [filterItem, setFilterItem] = useState(list.sec01);
+    //callback 설정
+    const fetchData = useCallback(() => {
+        fetch('./data.json')
+        .then(response => response.json())
+        .then(data => setList(data))
+    }, []);
+    //useeffect 설정
+    useEffect(() => {fetchData()}, [fetchData])
 
     function changeFilter(e){
-        //console.log(e.target.value)
-        //changeList(e.target.value);
-        if(e.target.value === "Select"){
-            setData(data);
-            return;
+        if(e.target.value === 'Select'){
+            setList(list);
+            setisFiltered(false)
+        }else{
+            const filters = Object.values(list.sec01).filter( (item) => item.value === e.target.value )
+            setisFiltered(true);
+            setFilterItem(filters);
+            console.log(filters);
         }
-        let filterList = Data.sec01.filter( (item) => e.target.value === item.value );
-        setFilterData(filterList);
     }
 
-    function changeList(){
-        setFilterData.map((item) => console.log(item));
-        
+    function FilterList(){
+        return(
+            <figure>
+                <img src={process.env.PUBLIC_URL + img} alt='title' />
+                <figcaption>
+                    <dl>
+                        <dt>title</dt>
+                        <dd>content</dd>
+                        <dd>price</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        )
     }
 
     return(
@@ -44,17 +66,9 @@ function Section01(){
                 </select>
             </div>
             <section className='page mgb'>
-                {changeList()}
-                {/* <figure>
-                    <img src={process.env.PUBLIC_URL + img} alt={title} />
-                    <figcaption>
-                        <dl>
-                            <dt>title</dt>
-                            <dd>content</dd>
-                            <dd>price</dd>
-                        </dl>
-                    </figcaption>
-                </figure> */}
+                {isFiltered ?
+                filterItem.map( (elm) => <FilterList value={elm} key={elm.id}></FilterList> )
+                : Object.values(list.sec01).map( (elm) => <FilterList value={elm} key={elm.id}></FilterList> )}
             </section>
         </article>
         </>
