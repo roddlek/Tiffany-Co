@@ -30,21 +30,6 @@ function Section01(){
         }
     }
 
-    function FilterList(){
-        return(
-            <figure>
-                {/* <img src={process.env.PUBLIC_URL + img} alt='title' /> */}
-                <figcaption>
-                    <dl>
-                        <dt>title</dt>
-                        <dd>content</dd>
-                        <dd>price</dd>
-                    </dl>
-                </figcaption>
-            </figure>
-        )
-    }
-
     return(
         <>
         <article className='pageBox'>
@@ -65,9 +50,7 @@ function Section01(){
                 </select>
             </div>
             <section className='page mgb'>
-                {/* {isFiltered ?
-                setFilterItem.map( (elm) => <FilterList elm={elm} key={elm.id}></FilterList> )
-                : Object.values(list.sec01).map( (elm) => <FilterList key={elm.id}></FilterList> )} */}
+                filter 기능 준비 중...
             </section>
         </article>
         </>
