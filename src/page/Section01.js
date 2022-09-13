@@ -1,4 +1,3 @@
-//import Data from './data.json';
 import './section.css'
 import { Link } from "react-router-dom";
 import { useState, useEffect, useCallback } from 'react';
@@ -12,7 +11,7 @@ function Section01(){
     const [filterItem, setFilterItem] = useState(list.sec01);
     //callback 설정
     const fetchData = useCallback(() => {
-        fetch('./data.json')
+        fetch('./page01.json')
         .then(response => response.json())
         .then(data => setList(data))
     }, []);
@@ -22,7 +21,7 @@ function Section01(){
     function changeFilter(e){
         if(e.target.value === 'Select'){
             setList(list);
-            setisFiltered(false)
+            setisFiltered(false);
         }else{
             const filters = Object.values(list.sec01).filter( (item) => item.value === e.target.value )
             setisFiltered(true);
@@ -34,7 +33,7 @@ function Section01(){
     function FilterList(){
         return(
             <figure>
-                <img src={process.env.PUBLIC_URL + img} alt='title' />
+                {/* <img src={process.env.PUBLIC_URL + img} alt='title' /> */}
                 <figcaption>
                     <dl>
                         <dt>title</dt>
@@ -66,9 +65,9 @@ function Section01(){
                 </select>
             </div>
             <section className='page mgb'>
-                {isFiltered ?
-                filterItem.map( (elm) => <FilterList value={elm} key={elm.id}></FilterList> )
-                : Object.values(list.sec01).map( (elm) => <FilterList value={elm} key={elm.id}></FilterList> )}
+                {/* {isFiltered ?
+                setFilterItem.map( (elm) => <FilterList elm={elm} key={elm.id}></FilterList> )
+                : Object.values(list.sec01).map( (elm) => <FilterList key={elm.id}></FilterList> )} */}
             </section>
         </article>
         </>

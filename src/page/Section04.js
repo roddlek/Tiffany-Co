@@ -1,21 +1,9 @@
-//import Data from '../../public/data.json';
-import { useState, useEffect, useCallback } from 'react';
+import Data from './data.json';
 import './section.css'
 import { Link } from "react-router-dom";
 
 function Section04(){
-    //state 설정
-    let [data, setData] = useState([]);
-    //callback 설정
-    const fetchData = useCallback(() => {
-        fetch('./data.json')
-        .then(response => response.json())
-        .then(list => setData(list))
-    }, []);
-    //useeffect 설정
-    useEffect(() => {fetchData()}, [fetchData])
-
-    return(
+   return(
         <>
         <article className='pageBox'>
             <h3 className='sec04'>FINE WATCHES</h3>
@@ -25,7 +13,7 @@ function Section04(){
                 <li><span>&gt;</span>Fine Watches</li>
             </ul>
             <section className='page'>
-                {data.sec04.map( (item) => 
+                {Data.sec04.map( (item) => 
                     <figure key={item.id}>
                         <img src={process.env.PUBLIC_URL + item.img} alt={item.title} />
                         <figcaption>
